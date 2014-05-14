@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/reset.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div#header
+      a(href="http://www.nordstrom.com")
+        img.logo(src='/images/nordstrom-logo.gif')
+      div#about
+        a(href='http://about.nordstrom.com/careers/#/about-us/main' title='Why work with us.') Why work with us?
+    block content

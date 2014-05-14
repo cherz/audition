@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  div#back-to-search
+    a(href="/") Back To Search Results
+
+  div#wrapper
+
+    div#product-image
+      img(src="http://g.nordstromimage.com/imagegallery/store/product/large/#{product.image_url}.jpg")
+
+    div#product-specs
+      div.row
+        div.label
+            span Brand:
+        div.value
+            span #{product.brand}
+
+      div.row
+        div.label
+            span Description:
+        div.value
+            span #{product.name}
+
+      div.row
+        div.label
+            span Product Id:
+        div.value
+            span #{product.style_id}
+
+      div.row
+        div.label
+            span Price:
+        div.value
+            span #{product.formatted_regular_price}
+
+
+      form#add-to-cart(action="/#" method="post")
+        button Add to cart

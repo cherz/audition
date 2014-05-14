@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  ul.product-grid
+    each product in products
+      li.product-tile
+        a(href="product?sid=#{product.style_id}")
+          img(src="http://g.nordstromimage.com/imagegallery/store/product/medium/#{product.image_url}.jpg")
+        br
+        span.price #{product.formatted_regular_price}
+        br
+        span.product-name #{product.name}
+        br
+        span.product-brand #{product.brand}
