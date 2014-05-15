@@ -11,6 +11,7 @@ body {
 }
 
 #header .logo {
+	display: inline-block;
 	margin-left: 10px;
 	border: 0px;
 }
